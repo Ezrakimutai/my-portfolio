@@ -1,7 +1,9 @@
+
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+
 
 // server used to send send emails
 const app = express();
@@ -20,7 +22,7 @@ const contactEmail = nodemailer.createTransport({
     },
 });
 
-contactEmail.verify((error) => {
+contactEmail.verify((error: Error) => {
     if (error) {
         console.log(error);
     } else {
@@ -28,7 +30,7 @@ contactEmail.verify((error) => {
     }
 });
 
-router.post("/contact", (req, res) => {
+router.post("/contact", (req: any, res: any) => {
     const name = req.body.firstName + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
@@ -42,7 +44,7 @@ router.post("/contact", (req, res) => {
            <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
     };
-    contactEmail.sendMail(mail, (error) => {
+    contactEmail.sendMail(mail, (error: Error) => {
         if (error) {
             res.json(error);
         } else {
