@@ -1,9 +1,5 @@
 import { title } from "process";
 import { Container, Row, Col, Tab, Nav, TabContainer, TabContent, TabPane } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import { ProjectCard } from './ProjectCard';
 
@@ -13,17 +9,17 @@ export const Projects = () => {
         {
             title: "Imperial Designs",
             description: "Architecture",
-            imgUrl: './assets/img/Logo.png',
+            imgUrl: './src/assets/img/Logo.png',
         },
         {
             title: "Tawi Kitchen & Events",
             description: "Web Design",
-            imgUrl: './assets/img/Tawi.png',
+            imgUrl: './src/assets/img/Tawi.png',
         },
         {
             title: "Book Store",
             description: "Education",
-            imgUrl: './assets/img/bookstore.png',
+            imgUrl: './src/assets/img/bookstore.png',
         },
     ];
 
@@ -71,7 +67,7 @@ export const Projects = () => {
                     </Row>
 
                 </Container>
-                <img className="background-image-right" src={colorSharp2}></img>
+                <img src={"url(./src/assets/img/header-img.svg)"} alt="Header " />
             </section>
         </>
     )

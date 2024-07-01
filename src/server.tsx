@@ -52,3 +52,4 @@ router.post("/contact", (req: any, res: any) => {
         }
     });
 });
+export{}
