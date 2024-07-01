@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from './assets/img/logo.svg';
-import navIcon1 from './assets/img/nav-icon1.svg';
-import navIcon2 from './assets/img/nav-icon2.svg';
-import navIcon3 from './assets/img/nav-icon3.svg'
+
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -29,7 +27,7 @@ export const NavBar = () => {
     <>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="#home"><img src={logo} alt="LOGO" /></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src={"url(./src/assets/img/logo.svg)"} alt="LOGO" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span className="Navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -42,9 +40,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className='social-icon'>
-                <a href="#"> <img src={navIcon1} alt="" /></a>
-                <a href="#"> <img src={navIcon2} alt="" /></a>
-                <a href="#"> <img src={navIcon3} alt="" /></a>
+              <img src={"url(./src/assets/img/nav-icon1.svg)"} alt="ICON" />
+              <img src={"url(./src/assets/img/nav-icon2.svg)"} alt="ICON" />
+              <img src={"url(./src/assets/img/nav-icon3.svg)"} alt="ICON" />
               </div>
               <button className="vvd"><span>Lets Connect</span></button>
 

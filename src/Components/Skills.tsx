@@ -1,11 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
-
 
 export const Skills = () => {
     const responsive = {
@@ -40,15 +35,15 @@ export const Skills = () => {
                             <p>Strong knowledge of modern JavaScript and TypeScript. Skilled in building dynamic web applications using frameworks like React</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                <img src={"url(./src/assets/img/meter1.svg)"} alt="IMG" />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div>
-                                    <img src={meter2} alt="Image" />
+                                <img src={"url(./src/assets/img/meter2.svg)"} alt="IMG" />
                                     <h5>UI/UX Design</h5>
                                 </div>
                                 <div>
-                                    <img src={meter3} alt="Image" />
+                                <img src={"url(./src/assets/img/meter2.svg)"} alt="IMG" />
                                     <h5>Graphic Design</h5>
                                 </div>
                             </Carousel>
@@ -56,7 +51,7 @@ export const Skills = () => {
                     </col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            <img src={"url(./src/assets/img/color-sharp.png)"} alt="Header Img" />
         </section>
     )
 }
