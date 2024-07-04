@@ -44,15 +44,15 @@ return(
                     </div>
                     <div className="item">
                       <img src={meter2} alt="Image2"/> 
-                      <h5>Product Design</h5>
+                      <h5>UI/UX Design</h5>
                     </div>
                     <div className="item">
                       <img src={meter3} alt="Image3"/> 
-                      <h5>Fintech Engineering</h5>
+                      <h5>Software Architecture</h5>
                     </div>
                     <div className="item">
                       <img src={meter1} alt="Image4"/> 
-                      <h5>Brand Identity</h5>
+                      <h5>Responsive Design</h5>
                     </div>
                   </Carousel>
                 </div>
