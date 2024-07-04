@@ -7,6 +7,9 @@ import projImg3 from "../assets/img/bookstore.png";
 import projImg4 from "../assets/img/work-3.jpg";
 import projImg5 from "../assets/img/project-img1.png";
 import projImg6 from "../assets/img/architect.jpg";
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+
 
 
 
@@ -48,8 +51,13 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
+                    <TrackVisibility>
+                    {({ isVisible }) =>
+                    <div className= {isVisible ? "animate__animated animate__bounce" : ""}>
                     <h2>Projects</h2>
                     <p>Welcome to the Projects section of my portfolio! Here, you'll find a showcase of my work, highlighting a diverse range of projects that demonstrate my skills and passion for web development.</p>
+                    </div>}
+                    </TrackVisibility>
              <Tab.Container id="projects-tabs" defaultActiveKey="first">
                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
