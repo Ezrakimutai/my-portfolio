@@ -6,6 +6,8 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 export const NavBar = () => {
@@ -31,7 +33,7 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""} >
       <Container>
-        <Navbar.Brand href="#home"><img src={logo} alt="Logo" /></Navbar.Brand>
+        <AccountCircleIcon/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
           <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
@@ -43,6 +45,7 @@ export const NavBar = () => {
           </Nav>
           <span className='navBar-text'>
             <div className='social-icon'>
+              <a href="https://github.com/Ezrakimutai" className="github"><GitHubIcon/></a>
               <a href="https://www.linkedin.com/in/ezra-kimutai-20a287224"><img src={navIcon1} alt='' /></a>
               <a href="https://www.facebook.com/profile.php?id=100083594628866&mibextid=ZbWKwL" ><img src={navIcon2} alt='' /></a>
               <a href="https://www.instagram.com/its_kimtai/?hl=en" ><img src={navIcon3} alt='' /></a>
