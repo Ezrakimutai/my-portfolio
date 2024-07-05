@@ -4,6 +4,8 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 export const Footer = () => {
   return (
@@ -21,6 +23,9 @@ export const Footer = () => {
               <a href="https://www.instagram.com/its_kimtai/?hl=en"><img src={navIcon3} alt="Icon" /></a>
             </div>
             <p>Copyright 2024. Ezra Kimutai.</p>
+            <p><EmailIcon/> kimtaiezra02@gmail.com</p>
+            <p><PhoneIcon/>+254702441101</p>
+            
           </Col>
         </Row>
       </Container>
